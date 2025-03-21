@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando media</title>
+</head>
+<body>
+
+    <h1> Calculando o imc </h1>
+
+    <script>
+        var kg = parseFloat(prompt("Entre com seu peso em quilos: "));
+        var alt = parseFloat(prompt("Entre com sua altura em metros: "));
+
+        let imc = kg/alt**2
+
+        document.write("Seu IMC é " + imc.toFixed(1) + "kg/m2" +"<br>");
+
+        if(imc <= 18.5) {
+            document.write("Abaixo do peso");
+        }else if(imc > 18.5 && imc <= 24.9) {
+            document.write("Peso normal");
+        }
+        else if(imc >= 25 && imc <= 29.9) {
+            document.write("Sobrepeso");
+        }
+        else if(imc >= 30 && imc <= 34.9) {
+            document.write("Obsidade grau I");
+        }
+        else if(imc >= 35 && imc <= 39.9) {
+            document.write("Obsidade grau II");
+        }
+        else {
+            document.write("Obsidade grau III ou mórbida");
+        }   
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+</head>
+<body>
+
+    <h1> Votação </h1>
+
+    <script>
+        var age = parseInt(prompt("Entre com sua idade: "));
+
+        if(age < 16){
+            document.write("Não pode votar");
+        }else if(age >= 18 && age <= 69) {
+            document.write("Obrigado a votar");
+        }else {
+            document.write("Não é obrigado a votar");
+        }   
+    </script>
+
+</body>
+</html>
